@@ -1,7 +1,8 @@
 require("rgdal")
 require("maptools")
-require("ggplot2")
 require("plyr")
+require("ggplot2")
+
 
 setwd("SkyTrain")
 
@@ -56,12 +57,12 @@ labels <- station.densities
 
 ##
 
-p <- ggplot() + geom_path(data = line.points, aes(x = long, y = lat, group = group), size = 2, colour = "darkgrey") + geom_path(data = cline.points, aes(x = long, y = lat, group = group), size = 2, colour = "darkgrey") + geom_point(data = station.densities, aes(x = long, y = lat, fill = r800), size = 12, pch = 21, colour = "black") + geom_point(data = station.densities, aes(x = long, y = lat, fill = r400), size = 7, pch = 21, colour = "white") + theme(panel.background = element_blank(), panel.grid.minor = element_blank(), axis.line = element_blank(), axis.text.x = element_blank(), axis.text.y = element_blank(), axis.ticks = element_blank(), axis.title.x = element_blank(), axis.title.y = element_blank()) + geom_text(data = labels.left, aes(long-2500, lat, label = Station), size = 3) + geom_text(data = labels.right, aes(long+1500, lat, label = Station), size = 3) + geom_text(data = labels.top, aes(long, lat+1000, label = Station), size = 3) + geom_text(data = labels.bottom, aes(long, lat-1000, label = Station), size = 3)
+p <- ggplot() + geom_path(data = line.points, aes(x = long, y = lat, group = group), size = 2, colour = "darkgrey") + geom_path(data = cline.points, aes(x = long, y = lat, group = group), size = 2, colour = "darkgrey") + geom_point(data = station.densities, aes(x = long, y = lat, fill = r800), size = 12, pch = 21, colour = "black") + geom_point(data = station.densities, aes(x = long, y = lat, fill = r400), size = 7, pch = 21, colour = "white") + theme(panel.background = element_blank(), panel.grid.minor = element_blank(), axis.line = element_blank(), axis.text.x = element_blank(), axis.text.y = element_blank(), axis.ticks = element_blank(), axis.title.x = element_blank(), axis.title.y = element_blank()) 
+
+# geom_text(data = labels.left, aes(long-2500, lat, label = Station), size = 3) + geom_text(data = labels.right, aes(long+1500, lat, label = Station), size = 3) + geom_text(data = labels.top, aes(long, lat+1000, label = Station), size = 3) + geom_text(data = labels.bottom, aes(long, lat-1000, label = Station), size = 3)
 
 
 p + scale_fill_gradient(low = "#ffeda0", high = "#f03b20")
-
-ggplot() + geom_bar(data = labels, aes(Station,r400, fill = CITY ), stat = "identity")
 
 
 

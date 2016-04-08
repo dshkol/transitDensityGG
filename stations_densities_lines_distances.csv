@@ -1,0 +1,50 @@
+station,city,line,order,distance,cdistance,d400,d800,ashelter,aowned
+Waterfront,Vancouver,Expo,1,0,0,3944,8652,1331.732131,769748.1118
+Burrard,Vancouver,Expo,2,0.875,0.875,4554,12736,1379.856215,677237.5766
+Granville,Vancouver,Expo,3,0.375,1.25,5189,11504,1434.446954,604839.0912
+Stadium-Chinatown,Vancouver,Expo,4,0.585,1.835,9900,10760,1280.870086,567008.0547
+Main St-Science World,Vancouver,Expo,5,1.12,2.955,2215,3521,1079.145401,603999.474
+Commercial-Broadway,Vancouver,Expo,6,2.7,5.655,7167,4846,903.7067389,656829.8884
+Nanaimo,Vancouver,Expo,7,2,7.655,5334,5315,939.8304287,739937.1783
+29th Ave,Vancouver,Expo,8,0.83,8.485,5675,6381,867.7585705,734385.6727
+Joyce-Collingwood,Vancouver,Expo,9,1.23,9.715,12191,9102,970.1615223,558309.954
+Patterson,Burnaby,Expo,10,1.76,11.475,5939,7222,949.6772624,408388.4943
+Metrotown,Burnaby,Expo,11,0.785,12.26,9854,6612,977.3540938,461378.6546
+Royal Oak,Burnaby,Expo,12,1.29,13.55,5626,4761,966.2456795,528937.8075
+Edmonds,Burnaby,Expo,13,2.47,16.02,5697,5084,946.9481852,428420.1182
+22nd St,New Westminster,Expo,14,1.48,17.5,1361,621,913.606918,651583.1311
+New Westminster,New Westminster,Expo,15,2.92,20.42,6760,2740,957.9902224,347705.0008
+Columbia,New Westminster,Expo,16,0.64,21.06,4514,2067,929.3068806,356836.9957
+Scott Road,Surrey,Expo,17,2.3,23.36,332,320,935.1077833,354964.0302
+Gateway,Surrey,Expo,18,2.45,25.81,3783,3784,856.9069874,341258.6408
+Surrey Central,Surrey,Expo,19,1.16,26.97,3207,4040,794.3999001,271033.8106
+King George,Surrey,Expo,20,0.78,27.75,4938,2777,824.6890737,284443.3328
+Sapperton,New Westminster,Millenium,1,2.56,2.56,1385,1003,852.1353296,454286.4197
+Braid,New Westminster,Millenium,2,1.26,3.82,582,681,996.0416909,522556.1986
+Lougheed,Burnaby,Millenium,3,1.84,5.66,4548,4011,1034.764815,348230.9898
+Production Way-University,Burnaby,Millenium,4,1.8,7.46,380,1052,1312.249092,694228.2547
+Lake City Way,Burnaby,Millenium,5,1.48,8.94,886,792,1255.33317,1041053.276
+Sperling-Burnaby Lake,Burnaby,Millenium,6,1.95,10.89,461,809,1474.864409,796114.5493
+Holdom,Burnaby,Millenium,7,1.42,12.31,1919,2386,1274.289405,599562.7937
+Brentwood,Burnaby,Millenium,8,1.57,13.88,6288,3631,1301.074517,517084.2283
+Gilmore,Burnaby,Millenium,9,0.85,14.73,3032,2203,1318.279505,487135.5551
+Rupert,Vancouver,Millenium,10,1.57,16.3,2059,2894,867.7128894,780250.2531
+Renfrew,Vancouver,Millenium,11,0.88,17.18,2437,4704,869.4622986,724765.573
+Commercial-Broadway,Vancouver,Millenium,12,1.9,19.08,7167,4846,903.7067389,656829.8884
+VCC-Clark,Vancouver,Millenium,13,0.83,19.91,3534,5405,861.7393534,477330.7988
+Waterfront,Vancouver,Canada,1,0,0,3944,8652,1331.732131,769748.1118
+Vancouver City Centre,Vancouver,Canada,2,0.57,0.57,10093,13895,1379.930502,556432.5124
+Yaletown-Roundhouse,Vancouver,Canada,3,0.95,1.52,27578,16395,1413.289516,631473.6875
+Olympic Village,Vancouver,Canada,4,0.95,2.47,5550,6611,1261.446383,618665.7626
+Broadway-City Hall,Vancouver,Canada,5,0.515,2.985,5608,6611,1182.984759,622308.7477
+King Edward,Vancouver,Canada,6,1.5,4.485,4388,3540,1199.744959,1303635.254
+Oakridge-41st Avenue,Vancouver,Canada,7,1.92,6.405,3425,2804,1244.367001,1190946.944
+Langara-49th Avenue,Vancouver,Canada,8,0.73,7.135,2058,3196,1296.349078,1134143.439
+Marine Drive,Vancouver,Canada,9,1.83,8.965,2672,1767,948.0379871,997822.666
+Bridgeport,Richmond,Canada,10,1.9,10.865,118,492,1190.928674,643096.311
+Aberdeen,Richmond,Canada,11,1.61,12.475,431,434,1210.659367,516548.7649
+Landsdowne,Richmond,Canada,12,0.93,13.405,3990,4880,1253.912441,415274.3549
+Richmond-Brighouse,Richmond,Canada,13,0.82,14.225,6920,8779,1124.410398,393589.8348
+Templeton,Richmond,YVR Airport,1,12.365,12.365,1,22,NA,671858
+Sea Island Centre,Richmond,YVR Airport,2,0.96,13.325,13,21,NA,671858
+YVR-Airport,Richmond,YVR Airport,3,1.605,14.93,1,1,NA,NA
