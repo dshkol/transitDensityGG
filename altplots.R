@@ -3,6 +3,9 @@
 devtools::install_github("hadley/ggplot2")
 devtools::install_github("hrbrmstr/ggalt")
 
+library(ggplot2)
+library(ggalt)
+
 #ggplot() + geom_bar(data = labels, aes(Station,r400, fill = CITY ), stat = "identity")
 
 stations <- read.csv("stations_densities_lines_distances.csv")
@@ -54,10 +57,11 @@ gg <- gg + theme(axis.title.y = element_blank())
 gg <- gg + theme(axis.text.y=element_text(margin=margin(r=-30, l=0)))
 # Title, subtitle, caption
 gg <- gg + labs(x = NULL, y = NULL, title = "Monthly Shelter Costs by Skytrain Station", subtitle = subtitle, caption = caption)
-gg <- gg + theme(plot.title=element_text(face="bold", hjust = 0.13))
-gg <- gg + theme(plot.subtitle=element_text(hjust = 0.50, margin=margin(b=12, t=3)))
+gg <- gg + theme(plot.title=element_text(face="bold", hjust = 0.08))
+gg <- gg + theme(plot.subtitle=element_text(hjust = 0.12, margin=margin(b=12, t=3)))
 gg <- gg + theme(plot.caption=element_text(size=8, margin=margin(t=10, b = 5)))
 gg
+ggsave("skytrain_lollipop_graph.pdf",dpi = 300)
 
 
 # line plot
@@ -65,3 +69,23 @@ gg
 #M #ffD520
 #Canada #009AC8
 
+stations$stationprice <- paste0(stations$station,", ",round(stations$ashelter))
+
+ll <- ggplot(stations[stations$line != "YVR Airport",], aes(cdistance,ashelter,factor(line), colour = line, fill = line, label = stationprice))
+ll <- ll + geom_line(size = 1)
+ll <- ll + geom_point(pch = 21, colour = "white", size = 4)
+ll <- ll + scale_fill_manual(values = c("#009AC8", "#ffD520", "#0060A9"), name = NULL)
+ll <- ll + scale_colour_manual(values = c("#009AC8", "#ffD520", "#0060A9"), name = NULL)
+ll <- ll + theme_minimal(base_family = "sans")
+ll <- ll + geom_text_repel(colour = "black")
+ll + facet_wrap(~line, nrow = 3, scales = "free")
+
+lle <- ggplot(stations[stations$line =="Expo",], aes(cdistance,ashelter,label = stationprice))
+lle <- lle + geom_line(size = 1.5, colour = "#0060A9")
+lle <- lle + geom_point(pch = 21, colour = "white", size = 4, fill = "#0060A9")
+lle <- lle + theme_minimal(base_family = "sans")
+lle <- lle + geom_text_repel(colour = "black", nudge_y = 20, force = 1.5)
+lle
+
+
+###
